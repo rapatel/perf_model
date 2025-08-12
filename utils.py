@@ -21,7 +21,7 @@ def generate_training_data(
     """
 
     # The training data will be the following:
-    # - Input: [total_ops, total_bytes]
+    # - Input: [total_ops, total_bytes, peak_gflops, peak_memory_bw_gbps]
     # - Target: [cost_ns]
     roofline_model = RooflineModel(
         peak_gflops=peak_gflops, peak_memory_bw_gbps=peak_memory_bw_gbps
